@@ -1,0 +1,9 @@
+.columnForm {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.columnForm>* {
+  padding: 10px;
+}

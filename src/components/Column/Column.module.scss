@@ -6,7 +6,8 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  width: calc(33% - 12px);
+  flex-wrap: wrap;
+  width: calc(33.333% - (0.6666 * $base-size));
   background: $color-light;
   margin: 0 $base-size $base-size 0;
   padding: ($base-size * 1.5);
@@ -14,7 +15,7 @@
   box-shadow: 0 math.div($base-size, 4) 0 rgba(0, 0, 0, 0.3);
   color: $color-dark;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin: 0 0 $base-size 0;
   }
 }
@@ -33,6 +34,7 @@
 
 .cards {
   padding: math.div($base-size, 2) 0;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
