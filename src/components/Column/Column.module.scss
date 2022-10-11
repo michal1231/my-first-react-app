@@ -3,7 +3,8 @@
 
 .column {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
@@ -32,9 +33,18 @@
   font-size: ($base-size * 2);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
+
 .cards {
   padding: math.div($base-size, 2) 0;
   width: 100%;
+}
+
+.cardForm {
+  margin-top: auto;
 }
 
 @media (max-width: 767px) {
