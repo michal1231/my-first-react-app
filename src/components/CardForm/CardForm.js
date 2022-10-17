@@ -8,7 +8,7 @@ const CardForm = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    props.action({ title: cardText }, props.columnId);
+    props.action(cardText, props.columnId);
     setCardText('');
   }
 
