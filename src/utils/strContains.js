@@ -1,0 +1,1 @@
+export const strContains = (mainString, subString) => mainString.toLowerCase().includes(subString);
