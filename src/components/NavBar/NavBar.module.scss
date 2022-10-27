@@ -22,6 +22,10 @@
     color: $color-light;
     padding: 0 10px;
     font-weight: bold;
+
+    &.linkActive {
+      color: $color-warning;
+    }
   }
 }
 

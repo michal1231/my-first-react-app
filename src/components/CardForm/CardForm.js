@@ -1,5 +1,4 @@
 import TextInput from '../TextInput/TextInput';
-import styles from './CardForm.module.scss';
 import Button from '../Button/Button';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -16,7 +15,7 @@ const CardForm = props => {
   }
 
   return (
-    <form className={styles.cardForm} onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <TextInput value={cardText} onChange={e => { setCardText(e.target.value) }} />
       <Button>Add card</Button>
     </form>
