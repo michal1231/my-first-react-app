@@ -1,0 +1,10 @@
+@import '../../styles/settings.scss';
+@import '../../styles/global.scss';
+
+.about {
+  padding: $base-size;
+}
+
+.title {
+  @include title;
+}
