@@ -16,3 +16,13 @@
 .favorite {
   color: $color-warning;
 }
+
+.icon {
+  display: block;
+  margin-left: 5px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+}
