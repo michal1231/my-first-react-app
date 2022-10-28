@@ -13,7 +13,7 @@ const Column = props => {
         <span className={styles.icon + ' ' + props.icon} />
         <h2 className={styles.title}>{props.title}</h2>
       </div>
-      <ul className={styles.cards}>{cards.map(card => <Card key={card.id} id={card.id}>{card.title}</Card>)}</ul>
+      <ul className={styles.cards}>{cards.map(card => <Card key={card.id} id={card.id} clickableFavorite={true}>{card.title}</Card>)}</ul>
       <div className={styles.cardForm}>
         <CardForm columnId={props.id} />
       </div>

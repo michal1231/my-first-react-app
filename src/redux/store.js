@@ -15,7 +15,9 @@ export const getColumnsByList = ({ columns }, listId) => columns.filter(column =
 
 export const getAllLists = ({ lists }) => lists;
 
-export const getIsFavorite = ({ cards }, cardId) => cards.find(card => card.id === cardId).isLiked;
+export const getIsFavorite = ({ cards }, cardId) => cards.find(card => card.id === cardId).isFavorite;
+
+export const getFavoriteCards = ({ cards }) => cards.filter(card => card.isFavorite);
 
 //action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
@@ -25,6 +27,8 @@ export const addCard = payload => ({ type: 'ADD_CARD', payload });
 export const updateSearchText = payload => ({ type: 'UPDATE_SEARCH_TEXT', payload });
 
 export const addList = payload => ({ type: 'ADD_LIST', payload });
+
+export const toggleCardFavorite = payload => ({ type: 'TOGGLE_CARD_FAVORITE', payload });
 
 
 
